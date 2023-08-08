@@ -6,4 +6,4 @@ The `main` branch should contain the code for the main deliverables.  You are en
 
 ## Report
 
-For the report files, you should put all the files related to them into the `report` branch.  See the [`README.md`](example/blob/report/README.md) in that branch for more information on its setup.
+For the report files, you should put all the files related to them into the `report` branch.  See the [`README.md`](../report/README.md) in that branch for more information on its setup.
