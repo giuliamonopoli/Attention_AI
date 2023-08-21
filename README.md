@@ -1,6 +1,6 @@
 # Example Project Setup
 
-This repository can be cloned and used as the basis for the projects in IN5310/IN9310.
+This repository can be cloned and used as the basis for project 1 in IN5310/IN9310.
 
 The `main` branch should contain the code for the main deliverables.  You are encouraged to use a branching model that works for your team, with the restriction that **stable** and working version of the code should be maintained in this branch.
 
