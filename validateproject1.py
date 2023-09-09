@@ -3,15 +3,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.optim.lr_scheduler import StepLR
-from torch.utils.data import DataLoader
+
 from torchvision import datasets, transforms
 import timm
 import litdata
 from time import process_time
 
-# import your own modules
-from p1_ViT_LoRA_02 import LowRankLayer, LowRankHeadWrapper
 
 
 # Get your fine-tuned models here.
@@ -22,8 +19,8 @@ def load_my_models():
     Return the models in the order indicated below,
     so the teachers can test them.
     """
-    full_model = torch.load('../output/full_model.pth')
-    lora_model = torch.load('../output/lora_model.pth')
+    full_model = torch.load('output/Full_best_model_woof__acc_78.6357__lr_0.0001__epoch_5__2023-09-08_21-53-06.pth')
+    lora_model = torch.load('output/lora_model.pth')
     return full_model, lora_model
 
 
