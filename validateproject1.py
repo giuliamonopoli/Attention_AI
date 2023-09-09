@@ -20,7 +20,7 @@ def load_my_models():
     so the teachers can test them.
     """
     full_model = torch.load('output/Full_best_model_woof__acc_78.6357__lr_0.0001__epoch_5__2023-09-08_21-53-06.pth')
-    lora_model = torch.load('output/lora_model.pth')
+    lora_model = torch.load('output/LoRA_best_model_woof__acc_78.4020__lr_0.0001__epoch_5__2023-09-08_23-40-09.pth')
     return full_model, lora_model
 
 
