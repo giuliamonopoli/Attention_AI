@@ -19,8 +19,8 @@ def load_my_models():
     Return the models in the order indicated below,
     so the teachers can test them.
     """
-    full_model = torch.load('output/Full_best_model_woof__acc_78.6357__lr_0.0001__epoch_5__2023-09-08_21-53-06.pth')
-    lora_model = torch.load('output/LoRA_best_model_woof__acc_78.4020__lr_0.0001__epoch_5__2023-09-08_23-40-09.pth')
+    full_model = torch.load('Full_best_model_woof__acc_78.6357__lr_0.0001__epoch_5__2023-09-08_21-53-06.pth')
+    lora_model = torch.load('LoRA_best_model_woof__acc_78.4020__lr_0.0001__epoch_5__2023-09-08_23-40-09.pth')
     return full_model, lora_model
 
 
@@ -36,7 +36,7 @@ def test_load_my_models():
     lora_model.eval()
 
     # Send an example through the models, to check that they loaded properly
-    test_img = torch.load('../output/test_img.pth')
+    test_img = torch.load('test_img.pth')
     with torch.no_grad():
         _ = full_model(test_img.unsqueeze(0).to(device))
         _ = lora_model(test_img.unsqueeze(0).to(device))
