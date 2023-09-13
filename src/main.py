@@ -8,7 +8,7 @@ from tqdm import tqdm
 import timm
 import litdata
 import time
-
+device = "cuda" if torch.cuda.is_available() else "cpu"
 # Define a function to parse command-line arguments
 def parse_args():
     parser = argparse.ArgumentParser(description="Fine tuning ImageWoof Dataset")
